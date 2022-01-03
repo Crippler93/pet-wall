@@ -27,4 +27,12 @@ footer {
 
 div#nav-container {
   padding: 15px;
+  a.nav-anchor {
+    text-decoration: none;
+  }
+  a.active {
+    mat-list-item {
+      color: #673ab7 !important;
+    }
+  }
 }

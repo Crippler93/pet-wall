@@ -22,10 +22,20 @@
     <div id="nav-container">
       <mat-list>
         <div mat-subheader>Pet</div>
-        <mat-list-item >
-          <mat-icon mat-list-icon>home</mat-icon>
-          <div mat-line>Home</div>
-        </mat-list-item>
+        <a [routerLink]="'/'" [routerLinkActive]="'active'" class="nav-anchor">
+          <mat-list-item >
+            <mat-icon mat-list-icon>home</mat-icon>
+            <div mat-line>Home</div>
+          </mat-list-item>
+        </a>
+        <a [routerLink]="'/list'" [routerLinkActive]="'active'" class="nav-anchor">
+          <mat-list-item >
+            <mat-icon mat-list-icon>list_view</mat-icon>
+            <div mat-line>List</div>
+          </mat-list-item>
+        </a>
+
+
         <mat-divider></mat-divider>
         <div mat-subheader>Info</div>
         <mat-list-item >

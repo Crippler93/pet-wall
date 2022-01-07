@@ -1,4 +1,4 @@
-<mat-drawer-container autosize>
+<mat-drawer-container [autosize]="true">
   <div id="container">
     <mat-toolbar color="primary">
       <button mat-icon-button class="mat-icon-button" aria-label="Side menu button" (click)="drawer.toggle()">
@@ -34,8 +34,6 @@
             <div mat-line>List</div>
           </mat-list-item>
         </a>
-
-
         <mat-divider></mat-divider>
         <div mat-subheader>Info</div>
         <mat-list-item >

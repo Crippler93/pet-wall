@@ -8,7 +8,7 @@ import { Pet } from '../models/Pet';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
-  @Input() pet: Pet = new Pet('', '', '', new Date());
+  @Input() pet: Pet = new Pet('', '', '', new Date(), '');
   constructor(private router: Router) {}
 
   ngOnInit(): void {}

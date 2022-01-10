@@ -3,6 +3,7 @@ export class Pet {
     public id: string,
     public name: string,
     public description: string,
-    public missingDate: Date
+    public missingDate: Date,
+    public imageURL: string
   ) {}
 }

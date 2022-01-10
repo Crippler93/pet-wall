@@ -1,9 +1,14 @@
 <div id="header">
-  <span id="name">{{pet.name}}</span>
+  <button mat-button color="primary" (click)="goBackToPetList()">
+    <mat-icon>arrow_back</mat-icon>
+    Go to pets list
+  </button>
+  <span id="name"><b>Name:</b>{{pet.name}}</span>
   <span id="date">{{pet.missingDate | date}}</span>
 </div>
 <div id="description">
-  <img src="" alt="pet picture">
+  <img [src]="pet.imageURL" alt="pet picture">
+  <p><b>Description:</b></p>
   <p>{{pet.description}}</p>
   <p></p>
 </div>

@@ -1,4 +1,11 @@
 <div id="pet-container">
   <h3>Pet</h3>
   <router-outlet></router-outlet>
+  <button id="floating-button" [ngClass]="buttonSettings" mat-mini-fab color="primary" aria-label="menu icon" (click)="toggleMenu()">
+    <mat-icon>add</mat-icon>
+  </button>
+  <div id="collapseMenu" [ngClass]="menuSettings">
+    <p>add missing pet</p>
+    <p>report founded pet</p>
+  </div>
 </div>

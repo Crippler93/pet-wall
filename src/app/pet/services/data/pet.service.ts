@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { FormElement } from '../../models/FormElement';
 import { Pet } from '../../models/Pet';
 
 @Injectable()
@@ -27,6 +28,8 @@ export class PetService {
     ),
   ];
 
+
+
   constructor() {}
 
   getPets(): Pet[] {
@@ -36,4 +39,13 @@ export class PetService {
   getPetById(id: string): Pet | undefined {
     return this.pets.find((pet) => pet.id === id);
   }
+
+  // TODO: Complete Form Builder
+  getFields(): FormElement[] {
+    return [
+      new FormElement('input', 'Example 1', {placeholder: "text"})
+    ]
+  }
+
+
 }

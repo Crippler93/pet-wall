@@ -5,7 +5,7 @@
     <mat-icon>add</mat-icon>
   </button>
   <div id="collapseMenu" [ngClass]="menuSettings">
-    <div class="menu-item">Add missing pet</div>
+    <div class="menu-item" (click)="navigateTo('new')">Add missing pet</div>
     <div class="menu-item">Report founded pet</div>
   </div>
 </div>

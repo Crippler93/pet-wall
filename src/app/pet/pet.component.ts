@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pet',
@@ -8,12 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class PetComponent implements OnInit {
   public menuSettings: { visible: boolean } = { visible: false };
   public buttonSettings: { active: boolean } = { active: false };
-  constructor() {}
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
   toggleMenu() {
     this.menuSettings.visible = !this.menuSettings.visible;
     this.buttonSettings.active = !this.buttonSettings.active;
+  }
+
+  navigateTo(route: string) {
+    this.router.navigate(['pet', route])
   }
 }
